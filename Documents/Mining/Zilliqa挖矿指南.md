@@ -8,9 +8,9 @@ Zilliqa官方挖矿指南（中文版）率先发布，由FireStack团队翻译�
 
 欢迎来到代号为猫山王的Zilliqa测试网络-v3。我们邀请所有矿工成为公共节点，加入到猫山王的测试网络中。希望这次能让大家熟悉工作流程，并帮助我们在2019年1月底之前发现主网上线之前的潜在漏洞。我们还鼓励所有社区开发人员加入猫山王测试网，以便更好地了解Zilliqa的网络架构。
 
- - [推荐的硬件要求](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)
- - [使用docker挖矿的步骤](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E4%BD%BF%E7%94%A8docker%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Ecpu%E6%88%96nvidia-gpu)
- - [本地挖矿的步骤](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)
+ - [推荐的硬件要求](#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)
+ - [使用docker挖矿的步骤](#%E4%BD%BF%E7%94%A8docker%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Ecpu%E6%88%96nvidia-gpu)
+ - [本地挖矿的步骤](#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)
 
 
 
@@ -93,7 +93,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-3. （可选）[如上所述](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8Ecuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
+3. （可选）[如上所述](#%E5%AF%B9%E4%BA%8Ecuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
 
 ---
 
@@ -119,7 +119,7 @@ Zilliqa挖矿节点的建议要求是：
 
    > 注意：如果您使用的是家用路由器，则很可能是在NAT环境中并且可以启用UPnP。但是，如果UPnP不起作用，则可以执行端口转发。
 
-   - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
+   - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
 
      ```
      sudo apt-get install miniupnpc
@@ -163,9 +163,9 @@ Zilliqa挖矿节点的建议要求是：
 
      支持使用[nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for Nvidia GPU。
 
-     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
+     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
-     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)在本地构建Zilliqa，而不是使用docker。
+     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)在本地构建Zilliqa，而不是使用docker。
 
 ---
 
@@ -200,7 +200,13 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
 
+---
 
+11. 停止通过 docker 挖矿，[DOCKER NAME]是你的 Docker 名称:
+
+    ```
+    sudo docker stop [DOCKER NAME]
+    ```
 
 ## 本地挖矿的步骤
 
@@ -268,7 +274,15 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-9. 首先下载Zilliqa依赖项，然后构建Zilliqa用于CPU挖矿**或**GPU挖矿。
+9. > **备注:** 如果你用 CPU 进行挖矿，请跳过此步骤.
+
+   **(可选)** 为 Nvidia GPUs 安装 CUDA 驱动，参看 [对于 CUDA 部分](#%E5%AF%B9%E4%BA%8Ecuda)
+
+   **(可选)** 为 AMD GPU 安装 OpenCL 驱动， 参看 [对于 OpenCL 部分](#%E5%AF%B9%E4%BA%8Eopencl).
+
+---
+
+10. 首先下载Zilliqa依赖项，然后构建Zilliqa用于CPU挖矿**或**GPU挖矿。
 
    - 首先，下载依赖项：
 
@@ -300,7 +314,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-10. 下载压缩的加入配置文件：
+11. 下载压缩的加入配置文件：
 
     ```
     cd ../join && wget https://testnet-join.zilliqa.com/configuration.tar.gz
@@ -308,7 +322,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-11. 解压缩压缩文件：
+12. 解压缩压缩文件：
 
     ```
     tar zxvf configuration.tar.gz
@@ -316,21 +330,21 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-12. 编辑*constants.xml*并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
+13. 编辑*constants.xml*并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
 
 ---
 
-13. **（可选）** 如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
+14. **（可选）** 如果您希望使用GPU，请安装[上面](#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
     - **对于Nvidia GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。 将`CUDA_GPU_MINE`参数从`false`更改为`true`。
 
-      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
+      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
 ---
 
-14. 如果您在NAT环境中分别使用**选项1a**或**选项1b**，则启用UPnP**或**执行单端口转发。
+15. 如果您在NAT环境中分别使用**选项1a**或**选项1b**，则启用UPnP**或**执行单端口转发。
 
     否则，如果您已经有公开的IP地址，请使用**选项2**查找当前的公共IP地址。
 
@@ -364,7 +378,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-15. 使用以下命令加入Zilliqa测试网络：
+16. 使用以下命令加入Zilliqa测试网络：
 
     ```
     ./launch.sh
@@ -372,7 +386,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-16. 系统将提示您输入以下详细信息：
+17. 系统将提示您输入以下详细信息：
 
     - `输入zilliqa源代码目录的完整路径：`*[键入您找到的路径第8步]*
 
@@ -382,7 +396,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-17. 你现在是猫山王测试网络的一名矿工。您可以使用以下方法监控进度：
+18. 你现在是猫山王测试网络的一名矿工。您可以使用以下方法监控进度：
 
     ```
     tail -f zilliqa-00001-log.txt
@@ -392,7 +406,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-18. 要检查本地生成的公钥和私钥对，可以在命令提示符中输入：
+19. 要检查本地生成的公钥和私钥对，可以在命令提示符中输入：
 
     ```
     less mykey.txt
@@ -402,7 +416,12 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
 
+---
 
+20. 停止本地挖矿，请输入:
+    ```
+    pkill zilliqa
+    ```
 
 ## 讨论渠道和错误报告
 
