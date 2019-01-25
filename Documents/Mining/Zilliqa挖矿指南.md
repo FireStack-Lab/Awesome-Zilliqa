@@ -212,7 +212,7 @@ sudo apt install ocl-icd-opencl-dev
 1. 为Zilliqa创建一个新目录：
 
    ```
-   cd~ / Desktop && mkdir Zilliqa
+   cd ~/Desktop && mkdir Zilliqa
    ```
 
 ---
@@ -236,7 +236,7 @@ sudo apt install ocl-icd-opencl-dev
 4. 克隆Scilla存储库并将目录更改为：
 
    ```
-   git clone https://github.com/Zilliqa/Scilla.git Scilla && cd Scilla
+   git clone https://github.com/Zilliqa/Scilla.git Scilla && cd Scilla && git checkout v0.0.4
    ```
 
 ---
@@ -260,7 +260,7 @@ sudo apt install ocl-icd-opencl-dev
 7. 克隆Zilliqa存储库并将目录更改为：
 
    ```
-   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout 6151a87
+   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout v3.4.1
    ```
 
 ---
