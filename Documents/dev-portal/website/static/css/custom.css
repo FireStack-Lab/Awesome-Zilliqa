@@ -1,0 +1,10 @@
+/* your custom css */
+
+.homeContainer .homeWrapper .projectLogo {
+  position: relative;
+  justify-content: center;
+}
+
+a {
+  color: #23a5a8;
+}
